@@ -44,7 +44,7 @@ Open http://localhost:3000
 ## Deployment
 
 Vercel Deployment:
-[wemark-x-school-mauve.vercel.app]
+[https://wemark-x-school-mauve.vercel.app/]
 
 ## Repository
 
