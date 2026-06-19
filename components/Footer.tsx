@@ -17,16 +17,6 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer__wrapper">
-          <div className="footer__scroll-top footer__scroll-top--desktop">
-            <Image
-              src="/images/footer-arrow.svg"
-              alt=""
-              width={70}
-              height={52}
-              aria-hidden
-            />
-          </div>
-
           <div className="footer__top">
             <div className="footer__content">
               <div className="footer__links">
@@ -69,6 +59,15 @@ export default function Footer() {
                     <span>+994 51 555 55 55</span>
                   </div>
                 </div>
+              </div>
+              <div className="footer__scroll-top footer__scroll-top--desktop">
+                <Image
+                  src="/images/footer-arrow.svg"
+                  alt=""
+                  width={70}
+                  height={52}
+                  aria-hidden
+                />
               </div>
             </div>
 

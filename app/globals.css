@@ -928,10 +928,8 @@ h6 {
 
 @media screen and (min-width: 650px) {
   .footer__scroll-top--desktop {
-    display: block;
-    position: absolute;
-    top: 0.5rem;
-    right: 0;
+    display: flex;
+    align-items: flex-start;
     opacity: 0.5;
   }
 }
@@ -957,7 +955,7 @@ h6 {
   .footer__content {
     flex-direction: row;
     justify-content: space-between;
-    padding: 6.6rem 0;
+    padding: 1rem 0;
     gap: 2rem;
     border-bottom: 0.1rem solid rgba(224, 224, 224, 0.3);
   }

@@ -1,6 +1,9 @@
 # xSchool Landing Page
 
 A pixel-perfect and fully responsive landing page built with Next.js based on the provided Figma design.
+# Note
+
+The "Go to xSchool" button/link is not included in the current implementation because it is absent from the API response (`https://admin.wemark.pro/api/tasks-xschool/`). Per the project requirement to pull all content from the API, this element was intentionally left out. Once the API includes the relevant field (e.g., `xschool_link` or similar), it can be added to the About section.
 
 ## Tech Stack
 
