@@ -14,7 +14,9 @@ export default function Founder({ founder }: FounderProps) {
   return (
     <section className="founder section-gap">
       <div className="container">
-        <h2 className="founder__title-desktop title-secondary">{founder.title}</h2>
+        <h2 className="founder__title-desktop title-secondary">
+          {founder.title}
+        </h2>
         <div className="founder__wrapper">
           <h3 className="founder__subtitle title-secondary founder__subtitle--mobile">
             {founder.title}
@@ -31,13 +33,44 @@ export default function Founder({ founder }: FounderProps) {
               />
               <div className="founder__badge">
                 <span className="founder__badge-name">{founder.name} -</span>{" "}
-                <span className="founder__badge-position">{founder.position}</span>
+                <span className="founder__badge-position">
+                  {founder.position}
+                </span>
               </div>
             </div>
-            <p className="founder__name founder__name--mobile">{founder.name}</p>
-            <p className="founder__position founder__position--mobile">
-              {founder.position}
-            </p>
+
+            <div className="founder__socials">
+              {founder.linkedin_url && (
+                <a
+                  href={founder.linkedin_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="founder__social-link"
+                >
+                  <Image
+                    src="/images/linkedin.svg"
+                    alt="LinkedIn"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+              )}
+              {founder.instagram_url && (
+                <a
+                  href={founder.instagram_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="founder__social-link"
+                >
+                  <Image
+                    src="/images/instagram.svg"
+                    alt="Instagram"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+              )}
+            </div>
           </div>
 
           <div className="founder__content">

@@ -18,7 +18,8 @@
 
 @font-face {
   font-family: "TT Firs Neue Trl";
-  src: url("/fonts/tt-firs-neue/TT-Firs-Neue-Trial-Regular.ttf") format("truetype");
+  src: url("/fonts/tt-firs-neue/TT-Firs-Neue-Trial-Regular.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,7 +27,8 @@
 
 @font-face {
   font-family: "TT Firs Neue Trl";
-  src: url("/fonts/tt-firs-neue/TT-Firs-Neue-Trial-Medium.ttf") format("truetype");
+  src: url("/fonts/tt-firs-neue/TT-Firs-Neue-Trial-Medium.ttf")
+    format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -119,7 +121,6 @@ h6 {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
 
 .container {
   width: 100%;
@@ -265,7 +266,7 @@ h6 {
 
 @media screen and (min-width: 650px) {
   .header__nav {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -367,6 +368,13 @@ h6 {
 }
 
 /* Banner */
+.banner .container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .banner__overlay {
   position: absolute;
   top: 0;
@@ -402,22 +410,20 @@ h6 {
 }
 
 .banner__content {
-  position: absolute;
-  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 0;
   z-index: 1;
+  height: 100%;
 }
+
 @media screen and (min-width: 650px) {
   .banner__content {
     justify-content: center;
-    padding-bottom: 0;
   }
 }
-
 .banner__title h1 {
   color: var(--color-white);
   text-transform: uppercase;
@@ -620,8 +626,8 @@ h6 {
   transform: translateX(-50%);
   background: var(--color-white);
   border-radius: 0.6rem;
-  padding: 1rem 2rem;
-  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 500;
   white-space: nowrap;
@@ -647,7 +653,16 @@ h6 {
 .founder__position {
   display: none;
 }
+.founder__socials {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
+.founder__social-link {
+  display: flex;
+  align-items: center;
+}
 .founder__content {
   flex: 1;
 }
@@ -831,7 +846,9 @@ h6 {
   content: "";
   position: absolute;
   background-color: var(--color-black-light);
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .accordion__icon::before {
@@ -924,7 +941,6 @@ h6 {
 @media screen and (min-width: 650px) {
   .footer__top {
     padding-bottom: 7rem;
-    border-bottom: 0.1rem solid rgba(224, 224, 224, 0.3);
   }
 }
 
@@ -941,6 +957,7 @@ h6 {
     justify-content: space-between;
     padding: 6.6rem 0;
     gap: 2rem;
+    border-bottom: 0.1rem solid rgba(224, 224, 224, 0.3);
   }
 }
 
@@ -1038,6 +1055,8 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
   }
 
   .footer__logo img {
@@ -1153,7 +1172,23 @@ h6 {
   color: var(--color-white-light-footer);
   cursor: pointer;
 }
+.footer__list:nth-child(3) {
+  order: 4;
+}
 
+.footer__list:nth-child(4) {
+  order: 3;
+}
+
+@media screen and (min-width: 650px) {
+  .footer__list:nth-child(3) {
+    order: unset;
+  }
+
+  .footer__list:nth-child(4) {
+    order: unset;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .about-slider__track,
   .marquee__scroller {

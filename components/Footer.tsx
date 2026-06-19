@@ -21,8 +21,8 @@ export default function Footer() {
             <Image
               src="/images/footer-arrow.svg"
               alt=""
-              width={61}
-              height={79}
+              width={70}
+              height={52}
               aria-hidden
             />
           </div>
@@ -53,20 +53,20 @@ export default function Footer() {
                 </div>
 
                 <div className="footer__list">
+                  <p className="footer__list-title">office</p>
+                  <div className="footer__text">
+                    <span>Alibeyov Gardashlari 27,</span>
+                    <span>Sabail, Sabah Residence</span>
+                  </div>
+                </div>
+
+                <div className="footer__list">
                   <p className="footer__list-title">For partnerships</p>
                   <div className="footer__text">
                     <span className="footer__link footer__link--mail">
                       partnership@wemark.az
                     </span>
                     <span>+994 51 555 55 55</span>
-                  </div>
-                </div>
-
-                <div className="footer__list">
-                  <p className="footer__list-title">office</p>
-                  <div className="footer__text">
-                    <span>Alibeyov Gardashlari 27,</span>
-                    <span>Sabail, Sabah Residence</span>
                   </div>
                 </div>
               </div>
@@ -94,6 +94,7 @@ export default function Footer() {
                 width={22}
                 height={22}
                 aria-hidden
+                style={{ filter: "invert(1) brightness(3)" }}
               />
               <span className="footer__lang-link">AZərbaycan dİLİ</span>
             </div>
@@ -104,9 +105,10 @@ export default function Footer() {
               <Image
                 src="/images/globe.svg"
                 alt=""
-                width={16}
-                height={16}
+                width={22}
+                height={22}
                 aria-hidden
+                style={{ filter: "invert(1) brightness(3)" }}
               />
               <span className="footer__lang-link">AZERBAIJANi</span>
               <span className="footer__lang-divider" />
