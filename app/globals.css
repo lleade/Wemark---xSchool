@@ -424,6 +424,7 @@ h6 {
     justify-content: center;
   }
 }
+
 .banner__title h1 {
   color: var(--color-white);
   text-transform: uppercase;
@@ -437,7 +438,7 @@ h6 {
     width: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .banner__title h1 {
@@ -453,6 +454,7 @@ h6 {
   font-weight: 400;
   color: var(--color-white);
   white-space: nowrap;
+  margin-left: 4rem;
 }
 
 .banner__title-line:nth-child(1) {
